@@ -12,8 +12,10 @@ class BankAccount:
     def display_balance(self) -> str:
         return f"{self.savininkas} dabartinis balanso likutis: {self.likutis}"
 
-user1 = BankAccount(savininkas="Darius",likutis="100")
+user1 = BankAccount(savininkas="Darius",likutis=100)
 
 print(user1.display_balance())
 user1.deposit(50)
+print(user1.display_balance())
+user1.withdraw(75)
 print(user1.display_balance())

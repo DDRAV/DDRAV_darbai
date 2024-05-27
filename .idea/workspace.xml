@@ -36,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.15_pas.executor": "Run",
+    "Python.Biblioteka.executor": "Run",
     "Python.Instrument.executor": "Run",
     "Python.Person.executor": "Run",
     "Python.Shoppingcart.executor": "Run",

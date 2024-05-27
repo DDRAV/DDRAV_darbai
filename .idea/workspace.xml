@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +36,7 @@
     "Python.15_pas.executor": "Run",
     "Python.Person.executor": "Run",
     "Python.Shoppingcart.executor": "Run",
+    "Python.Vehicle.executor": "Run",
     "Python.bankaccount.executor": "Run",
     "Python.book.executor": "Run",
     "Python.cars.executor": "Run",

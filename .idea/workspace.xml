@@ -38,6 +38,7 @@
     "Python.15_pas.executor": "Run",
     "Python.Biblioteka.executor": "Run",
     "Python.Instrument.executor": "Run",
+    "Python.Mokykla.executor": "Run",
     "Python.Person.executor": "Run",
     "Python.Shoppingcart.executor": "Run",
     "Python.Vehicle.executor": "Run",

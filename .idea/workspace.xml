@@ -20,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2gjrVXv2Fv4zqHkzxWufWLjEr4v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,7 +31,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Shoppingcart.executor": "Run",
+    "Python.bankaccount.executor": "Run",
+    "Python.book.executor": "Run",
+    "Python.cars.executor": "Run",
+    "Python.cat.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.passwordvalidator.executor": "Run",
+    "Python.rectangle.executor": "Run",
+    "Python.student.executor": "Run",
+    "Python.student2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -39,6 +48,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius\src" />
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius" />
     </key>
   </component>

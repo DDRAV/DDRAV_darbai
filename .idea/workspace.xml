@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/16_pas(miniprojektas)/miniProjektas.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/16_pas/miniProjektas.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2ND/6Fitness.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/2ND/6Fitness.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DDRAV"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DDRAV/DDRAV_darbai.git",
+    "accountId": "670103a9-1c48-4770-b3ff-a6da1a0e9238"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -35,29 +46,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.15_pas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Biblioteka.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Instrument.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Mokykla.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Person.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Shoppingcart.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Vehicle.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bankaccount.executor&quot;: &quot;Run&quot;,
-    &quot;Python.book.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cars.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.passwordvalidator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rectangle.executor&quot;: &quot;Run&quot;,
-    &quot;Python.student.executor&quot;: &quot;Run&quot;,
-    &quot;Python.student2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.15_pas.executor": "Run",
+    "Python.6Fitness.executor": "Run",
+    "Python.Biblioteka.executor": "Run",
+    "Python.Instrument.executor": "Run",
+    "Python.Mokykla.executor": "Run",
+    "Python.Person.executor": "Run",
+    "Python.Shoppingcart.executor": "Run",
+    "Python.Vehicle.executor": "Run",
+    "Python.bankaccount.executor": "Run",
+    "Python.book.executor": "Run",
+    "Python.cars.executor": "Run",
+    "Python.cat.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.passwordvalidator.executor": "Run",
+    "Python.rectangle.executor": "Run",
+    "Python.student.executor": "Run",
+    "Python.student2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius\src" />

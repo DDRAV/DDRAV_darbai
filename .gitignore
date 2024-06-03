@@ -1,10 +1,4 @@
 # created by virtualenv automatically
 .venv
 .env
-/.idea
-/.idea
-/.idea
-/.idea
-/.idea
-/.idea
-/.idea
+.idea

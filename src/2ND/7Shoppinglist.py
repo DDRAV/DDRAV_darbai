@@ -1,10 +1,35 @@
-#7 užduotis
-	#7.1 Apibrėžkite klasę ShoppingCart su atributu _items (privatus žodynas, kurio raktai yra elementų pavadinimai, o reikšmės - kiekiai).
-	#7.2 Pridėkite privatų metodą _calculate_total, kuris grąžina bendrą krepšelio prekių skaičių.
-	#7.3 Pridėkite viešuosius metodus add_item, kad pridėtumėte prekę su nurodytu kiekiu, remove_item, kad pašalintumėte prekę, ir get_total_items, kad grąžintumėte bendrą krepšelio prekių skaičių.
-	#7.4 Užtikrinkite, kad metodai add_item ir remove_item atnaujintų krepšelį ir apskaičiuotų bendrą kiekį.
-	#7.5 Sukurkite ShoppingCart objektą, pridėkite ir pašalinkite elementus ir gaukite bendrą elementų skaičių.
-
 class ShoppingCart:
-    def __init__(self,_items: dict):
-        self._items = _items
+    def __init__(self):
+        self._items = {}
+
+    def add_item(self, item_name, quantity):
+        if item_name in self._items:
+            self._items[item_name] += quantity
+        else:
+            self._items[item_name] = quantity
+        self._calculate_total()
+
+    def remove_item(self, item_name, quantity):
+        if item_name in self._items:
+            self._items[item_name] -= quantity
+            if self._items[item_name] <= 0:
+                del self._items[item_name]
+        self._calculate_total()
+
+    def _calculate_total(self):
+        self._total_items = sum(self._items.values())
+
+    def get_total_items(self):
+        return self._items
+
+
+cart = ShoppingCart()
+cart.add_item("obuolys", 3)
+cart.add_item("bananas", 2)
+print(cart.get_total_items())
+
+cart.add_item("obuolys", 2)
+print(cart.get_total_items())
+
+cart.remove_item("obuolys", 5)
+print(cart.get_total_items())

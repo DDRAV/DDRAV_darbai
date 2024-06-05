@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/17_pas/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/17_pas/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/17_pas/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/17_pas/s1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,9 @@
     "Python.main.executor": "Run",
     "Python.passwordvalidator.executor": "Run",
     "Python.rectangle.executor": "Run",
+    "Python.s1.executor": "Run",
+    "Python.s2.executor": "Run",
+    "Python.s3.executor": "Run",
     "Python.student.executor": "Run",
     "Python.student2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",

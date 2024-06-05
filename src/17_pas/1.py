@@ -10,4 +10,6 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
-        def plotas(self,):
+    def plotas(self):
+            pass
+    

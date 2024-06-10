@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myenv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/Scripts/Activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myenv/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/Scripts/python.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myenv/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/Scripts/pythonw.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myenv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

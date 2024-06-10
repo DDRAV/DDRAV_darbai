@@ -23,5 +23,5 @@ df_handler = DataFrameHandler()
 df_handler.load_dataframe('example.csv')
 
 
-df_handler.filter_data(df_handler.data_frame['Column'] > 5)
-df_handler.group_data('AnotherColumn')
+df_handler.filter_data(df_handler.data_frame['--'] > 5)
+df_handler.group_data('9')

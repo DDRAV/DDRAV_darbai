@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/20_pas/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/20_pas/example.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/20_pas/pandasuzd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/20_pas/pandasuzd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,7 @@
     "Python.2.executor": "Run",
     "Python.6Fitness.executor": "Run",
     "Python.Biblioteka.executor": "Run",
+    "Python.HTML_bendra.executor": "Run",
     "Python.Instrument.executor": "Run",
     "Python.Mokykla.executor": "Run",
     "Python.Person.executor": "Run",

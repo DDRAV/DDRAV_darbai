@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for Pagrindinis.test_empty_string.executor": "Run",
+    "Python tests.Python tests for Pagrindinis.test_non_palindrome.executor": "Run",
+    "Python tests.Python tests for Pagrindinis.test_palindrome.executor": "Run",
+    "Python tests.Python tests in Pagrindinis.py.executor": "Run",
     "Python.1.executor": "Run",
     "Python.15_pas.executor": "Run",
     "Python.2.executor": "Run",
@@ -95,6 +98,60 @@
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Python tests for Pagrindinis.test_empty_string" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PY_13_paskaita_darius" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/26_pas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Pagrindinis.test_empty_string&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Pagrindinis.test_non_palindrome" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PY_13_paskaita_darius" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/26_pas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Pagrindinis.test_non_palindrome&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Pagrindinis.test_palindrome" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PY_13_paskaita_darius" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/26_pas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Pagrindinis.test_palindrome&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for Pagrindinis.test_empty_string" />
+        <item itemvalue="Python tests.Python tests for Pagrindinis.test_non_palindrome" />
+        <item itemvalue="Python tests.Python tests for Pagrindinis.test_palindrome" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -123,5 +180,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/26_pas/Pagrindinis.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

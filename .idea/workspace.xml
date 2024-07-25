@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/27_pas/errorhandling.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/27_pas/errorhandling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/27_pas/test_dir/test_file.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +85,12 @@
     "Python.s2.executor": "Run",
     "Python.s3.executor": "Run",
     "Python.shoppingcart.executor": "Run",
+    "Python.sql.executor": "Run",
     "Python.streamlit.executor": "Run",
     "Python.streamlit1uzd.executor": "Run",
     "Python.student.executor": "Run",
     "Python.student2.executor": "Run",
+    "Python.webscrab.executor": "Run",
     "Python.zipfile.executor": "Run",
     "Python.zipfileuzd.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -195,6 +195,16 @@
           <url>file://$PROJECT_DIR$/src/26_pas/Pagrindinis.py</url>
           <line>5</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/34pas/sql.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/34pas/sql.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

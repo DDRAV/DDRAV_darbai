@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 class DataVisualizer:
     def plot_data(self, x, y):
         plt.plot(x, y)
-        plt.xlabel('X label')
-        plt.ylabel('Y label')
+        plt.xlabel('Dydis label')
+        plt.ylabel('Kaina label')
         plt.title('Data Visualization')
         plt.show()
 

@@ -29,8 +29,8 @@ if uploaded_file is not None:
     # 4. Sukurkite programą, kuri įkelia CSV failą ir rodo apibendrintą statistiką (vidurkį, medianą, min, max) kiekvienam skaitiniam stulpeliui.
     st.write(df.describe())
     #importuojame altair
-    x_axis = st.selectbox('Select X-axis', df.columns)
-    y_axis = st.selectbox('Select Y-axis', df.columns)
+    x_axis = st.selectbox('Select Dydis-axis', df.columns)
+    y_axis = st.selectbox('Select Kaina-axis', df.columns)
 
     # Sukuriame linijinį grafiką
     chart = alt.Chart(df).mark_line(point=True).encode(

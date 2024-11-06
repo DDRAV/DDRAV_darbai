@@ -17,6 +17,8 @@ import matplotlib.pyplot as plt
 data = load_breast_cancer()
 X = data.data
 y = data.target
+print(X)
+print(y)
 
 # Treniravimo ir testavimo rinkiniai
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)

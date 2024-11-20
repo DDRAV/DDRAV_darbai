@@ -1,0 +1,59 @@
+Agglomerative Clustering Overall Silhouette Score: 0.11682496242927323
+Agglomerative Clustering Silhouette Scores for Each Cluster:
+Cluster
+0    0.055716
+1    0.057736
+2   -0.157400
+3    0.030223
+4    0.131778
+5    0.355699
+6    0.216707
+7   -0.002862
+8    0.117027
+
+KMeans Overall Silhouette Score: 0.13009614280338844
+KMeans Silhouette Scores for Each Cluster:
+Cluster
+0    0.058332
+1    0.066534
+2    0.063728
+3    0.174322
+4    0.237878
+5    0.322530
+6    0.036909
+7    0.125149
+8    0.120717
+
+Agglomerative Clustering Overall Silhouette Score: 0.14474151792939033
+Agglomerative Clustering Silhouette Scores for Each Cluster:
+Cluster
+0     0.091061
+1    -0.044357
+2    -0.158381
+3     0.080160
+4     0.113684
+5     0.155286
+6     0.204524
+7     0.074759
+8     0.092516
+9     0.200602
+10    0.116596
+11    0.353717
+12    0.253630
+
+KMeans Overall Silhouette Score: 0.15652677762481143
+KMeans Silhouette Scores for Each Cluster:
+Cluster
+0     0.048571
+1     0.069162
+2     0.177490
+3     0.174261
+4     0.217412
+5     0.346944
+6     0.146487
+7     0.109243
+8     0.115310
+9     0.100099
+10    0.108938
+11    0.171609
+12    0.000000

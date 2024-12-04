@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +74,7 @@
     "Python.Instrument.executor": "Run",
     "Python.Mokykla.executor": "Run",
     "Python.Neuroniniai digits.executor": "Run",
+    "Python.Neuroniniai optimizacija.executor": "Run",
     "Python.Numpy.executor": "Run",
     "Python.Person.executor": "Run",
     "Python.Shoppingcart.executor": "Run",
@@ -118,6 +120,11 @@
     "Python.student.executor": "Run",
     "Python.student2.executor": "Run",
     "Python.tekstuzd.executor": "Run",
+    "Python.tensorflow pav.executor": "Run",
+    "Python.tensorflow.executor": "Run",
+    "Python.tensorflow_cancer.executor": "Run",
+    "Python.tensorflow_cancer_optimisers.executor": "Run",
+    "Python.tensorflow_diabetes.executor": "Run",
     "Python.webscrab.executor": "Run",
     "Python.zipfile.executor": "Run",
     "Python.zipfileuzd.executor": "Run",

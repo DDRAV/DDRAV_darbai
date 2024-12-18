@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f04b0430-407c-45db-ae78-501e17d77239" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Neuroniniaitinklai/tensorflow_cancer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Neuroniniaitinklai/tensorflow_cancer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +69,12 @@
     "Python.Agglomeracija pav.executor": "Run",
     "Python.Agglomeracija.executor": "Run",
     "Python.Biblioteka.executor": "Run",
+    "Python.Embeding.executor": "Run",
+    "Python.GRUmy.executor": "Run",
     "Python.Gridsearch.executor": "Run",
     "Python.HTML_bendra.executor": "Run",
     "Python.Instrument.executor": "Run",
+    "Python.LSTMmy.executor": "Run",
     "Python.Mokykla.executor": "Run",
     "Python.Neuroniniai digits.executor": "Run",
     "Python.Neuroniniai optimizacija.executor": "Run",
@@ -86,6 +89,10 @@
     "Python.book.executor": "Run",
     "Python.cars.executor": "Run",
     "Python.cat.executor": "Run",
+    "Python.decayandearlystopping cancer.executor": "Run",
+    "Python.decayandearlystopping digits.executor": "Run",
+    "Python.decayandearlystopping.executor": "Run",
+    "Python.embadingmy.executor": "Run",
     "Python.kmeans.executor": "Run",
     "Python.logistinereg.executor": "Run",
     "Python.logreg2uzd.executor": "Run",
@@ -107,6 +114,7 @@
     "Python.regresija.executor": "Run",
     "Python.regresija2.executor": "Run",
     "Python.regresija_pav.executor": "Run",
+    "Python.rnn digits.executor": "Run",
     "Python.s1.executor": "Run",
     "Python.s2.executor": "Run",
     "Python.s3.executor": "Run",
@@ -125,6 +133,7 @@
     "Python.tensorflow_cancer.executor": "Run",
     "Python.tensorflow_cancer_optimisers.executor": "Run",
     "Python.tensorflow_diabetes.executor": "Run",
+    "Python.torch cancer.executor": "Run",
     "Python.webscrab.executor": "Run",
     "Python.zipfile.executor": "Run",
     "Python.zipfileuzd.executor": "Run",
@@ -135,6 +144,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\DDRAV Darbai\PY_13_paskaita_darius\src\Neuroniniaitinklai\Ngrams" />
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\DDRAV Darbai\PY_13_paskaita_darius\src\Medziai" />
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius\src" />
       <recent name="C:\Users\drawn\Mokymai\DDRAV Mokymai\13_Pas\PY_13_paskaita_darius\src\14_pas" />

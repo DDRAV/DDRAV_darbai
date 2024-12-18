@@ -1,0 +1,124 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, GRU, Dense, Dropout
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import re
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk import download
+
+# Atsisiųskite reikalingus NLTK duomenis
+download('punkt')
+download('stopwords')
+
+# Funkcija tekstų valymui
+def clean_text(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)  # Pašalinkite skyrybos ženklus
+    text = re.sub(r'\d+', '', text)  # Pašalinkite skaičius
+    tokens = word_tokenize(text)
+    stop_words = set(stopwords.words('english'))
+    tokens = [word for word in tokens if word not in stop_words]
+    return " ".join(tokens)
+
+# Duomenų paruošimas
+data = fetch_20newsgroups(subset="all")
+x_raw = data.data
+y = data.target
+
+# Valykite tekstus
+x = [clean_text(text) for text in x_raw]
+
+# Klasės kodavimas
+label_encoder = LabelEncoder()
+encoded_labels = label_encoder.fit_transform(y)
+
+# Duomenų atskyrimas
+def preprocess_data(x, y, max_vocab_size, max_sequence_length):
+    x_train, x_test, y_train, y_test = train_test_split(x, encoded_labels, test_size=0.2, random_state=42)
+
+    tokenizer = Tokenizer(num_words=max_vocab_size, oov_token="<UNK>")
+    tokenizer.fit_on_texts(x_train)
+
+    train_seq = tokenizer.texts_to_sequences(x_train)
+    test_seq = tokenizer.texts_to_sequences(x_test)
+
+    x_train_pad = pad_sequences(train_seq, maxlen=max_sequence_length, padding='post', truncating='post')
+    x_test_pad = pad_sequences(test_seq, maxlen=max_sequence_length, padding='post', truncating='post')
+
+    num_classes = len(np.unique(encoded_labels))
+    y_train_cat = to_categorical(y_train, num_classes)
+    y_test_cat = to_categorical(y_test, num_classes)
+
+    return x_train_pad, x_test_pad, y_train_cat, y_test_cat, num_classes
+
+# Eksperimentų parametrai
+sequence_lengths = [50, 100, 200]
+vocab_sizes = [5000, 7500, 10000]
+epoch_values = [10, 20]
+
+results = {}
+
+# Eksperimentų vykdymas
+for max_sequence_length in sequence_lengths:
+    for max_vocab_size in vocab_sizes:
+        for epochs in epoch_values:
+            print(f"Mokymas su max_sequence_length={max_sequence_length}, max_vocab_size={max_vocab_size}, epochs={epochs}")
+
+            x_train, x_test, y_train, y_test, num_classes = preprocess_data(x, y, max_vocab_size, max_sequence_length)
+
+            # Modelio sukūrimas
+            model = Sequential([
+                Embedding(input_dim=max_vocab_size, output_dim=128, input_length=max_sequence_length),
+                GRU(128, return_sequences=False),
+                Dense(64, activation='relu'),
+                Dropout(0.5),
+                Dense(num_classes, activation='softmax'),
+            ])
+
+            model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+            # Modelio apmokymas
+            history = model.fit(x_train, y_train, validation_split=0.2, batch_size=32, epochs=epochs, verbose=1)
+
+            # Testavimo rezultatų vertinimas
+            test_loss, test_accuracy = model.evaluate(x_test, y_test, verbose=1)
+            print(f"Test accuracy: {test_accuracy:.4f}")
+
+            # Rezultatų saugojimas
+            results[(max_sequence_length, max_vocab_size, epochs)] = test_accuracy
+
+# Surasti tris geriausius rezultatus
+sorted_results = sorted(results.items(), key=lambda x: x[1], reverse=True)[:3]
+print("\nTop 3 eksperimentų parametrai ir jų tikslumas:")
+for (params, accuracy) in sorted_results:
+    print(f"Parametrai: max_sequence_length={params[0]}, max_vocab_size={params[1]}, epochs={params[2]} | Tikslumas: {accuracy:.4f}")
+
+# Rezultatų vizualizacija
+fig, ax = plt.subplots(figsize=(12, 8))
+
+for sequence_length in sequence_lengths:
+    accuracies = [
+        results[(sequence_length, vocab_size, epochs)]
+        for vocab_size in vocab_sizes for epochs in epoch_values
+    ]
+    ax.plot(
+        range(len(accuracies)),
+        accuracies,
+        marker='o',
+        label=f'max_sequence_length={sequence_length}'
+    )
+
+ax.set_title("Modelio tikslumas keičiant sekų ilgį, žodyno dydį ir epochų skaičių")
+ax.set_xlabel("Eksperimentai")
+ax.set_ylabel("Tikslumas")
+ax.legend()
+plt.grid()
+plt.show()

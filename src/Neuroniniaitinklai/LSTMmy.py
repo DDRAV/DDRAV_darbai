@@ -1,5 +1,3 @@
-#pavyzdzio nera nes jis tokspat kaip GRUpav.py
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_20newsgroups
@@ -16,23 +14,26 @@ import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk import download
+import spacy
+from sklearn.utils.class_weight import compute_class_weight
 
-# Atsisiųskite reikalingus NLTK duomenis
+# Atsisiųskite reikalingus NLTK ir spaCy duomenis
 download('punkt')
 download('stopwords')
+nlp = spacy.load("en_core_web_sm")
 
 # Funkcija tekstų valymui
 def clean_text(text):
     text = text.lower()
-    text = re.sub(r'[\^\w\s]', '', text)  # Pašalinkite skyrybos ženklus
-    text = re.sub(r'\d+', '', text)  # Pašalinkite skaičius
-    tokens = word_tokenize(text)
+    text = re.sub(r'[^a-zA-Z\s]', '', text)  # Pašalinkite nereikalingus simbolius
+    doc = nlp(text)
+    text = ' '.join([token.lemma_ for token in doc])  # Lematizuokite tekstą
     stop_words = set(stopwords.words('english'))
-    tokens = [word for word in tokens if word not in stop_words]
-    return " ".join(tokens)
+    text = ' '.join([word for word in text.split() if word not in stop_words])  # Pašalinkite stop-words
+    return text
 
 # Duomenų paruošimas
-data = fetch_20newsgroups(subset="all")
+data = fetch_20newsgroups(subset="all", remove=('headers', 'footers', 'quotes'))
 x_raw = data.data
 y = data.target
 
@@ -60,11 +61,11 @@ def preprocess_data(x, y, max_vocab_size, max_sequence_length):
     y_train_cat = to_categorical(y_train, num_classes)
     y_test_cat = to_categorical(y_test, num_classes)
 
-    return x_train_pad, x_test_pad, y_train_cat, y_test_cat, num_classes
+    return x_train_pad, x_test_pad, y_train_cat, y_test_cat, num_classes, tokenizer
 
 # Eksperimentų parametrai
-sequence_lengths = [20, 50, 100]
-vocab_sizes = [10000, 20000]
+sequence_lengths = [50, 100, 200]
+vocab_sizes = [20000]
 
 results = {}
 
@@ -73,7 +74,7 @@ for max_sequence_length in sequence_lengths:
     for max_vocab_size in vocab_sizes:
         print(f"Mokymas su max_sequence_length={max_sequence_length}, max_vocab_size={max_vocab_size}")
 
-        x_train, x_test, y_train, y_test, num_classes = preprocess_data(x, y, max_vocab_size, max_sequence_length)
+        x_train, x_test, y_train, y_test, num_classes, tokenizer = preprocess_data(x, y, max_vocab_size, max_sequence_length)
 
         # Modelio sukūrimas
         model = Sequential([
@@ -87,7 +88,11 @@ for max_sequence_length in sequence_lengths:
         model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
         # EarlyStopping callback
-        early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+        early_stopping = EarlyStopping(monitor='val_loss', patience=8, restore_best_weights=True)
+
+        # Apskaičiuokite klasių svorius
+        class_weights = compute_class_weight('balanced', classes=np.unique(encoded_labels), y=encoded_labels)
+        class_weight_dict = {i: class_weights[i] for i in range(len(class_weights))}
 
         # Modelio apmokymas
         history = model.fit(
@@ -95,6 +100,7 @@ for max_sequence_length in sequence_lengths:
             validation_split=0.2,
             batch_size=32,
             epochs=100,
+            class_weight=class_weight_dict,
             callbacks=[early_stopping],
             verbose=1
         )
@@ -133,5 +139,3 @@ ax.set_ylabel("Tikslumas")
 ax.legend()
 plt.grid()
 plt.show()
-
-
